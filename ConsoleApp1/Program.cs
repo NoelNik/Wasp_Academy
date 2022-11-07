@@ -8,7 +8,7 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("LOL");
+            Console.WriteLine("Da");
         }
     }
 }
@@ -78,4 +78,28 @@ namespace Lessons
                 }
                 Console.WriteLine("\n");
             }
+*/
+/* Fourth_task
+ * {
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(n);
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write($" {factorial(i) / (factorial(j) * factorial(i - j))} ");
+                }
+                Console.WriteLine("\n");
+            }
+
+        }
+        static int factorial(int n)
+        {
+            int res = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                res *= i;
+            }
+            return res;
+        }
 */
