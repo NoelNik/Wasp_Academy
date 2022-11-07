@@ -15,16 +15,17 @@ namespace Lessons
 
 
 /* First_task
- * for (int i = 1000; i <= 9999; i++)
+ *for (int first = 3; first <= 9; first++)
             {
-                int first = i / 1000;
-                int second = i / 100 % 10;
-                int therd = i / 10 % 10;
-                int fourth = i % 10;
-                while ((first > second) && (second > therd) && (therd > fourth))
+                for (int second = first - 1; second >= 2; second--)
                 {
-                    Console.WriteLine(i);
-                    break;
+                    for (int third = second - 1; third >= 1; third--)
+                    {
+                        for (int fourth = third - 1; fourth >= 0; fourth--)
+                        {
+                            Console.WriteLine($"{first}{second}{third}{fourth}");
+                        }    
+                    }
                 }
             }
  */
