@@ -8,13 +8,13 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Da");
+            Console.WriteLine("Hello_world!");
         }
-    }
+    }  
 }
 
 
-/* First_task
+/* task_1.1
  *for (int first = 3; first <= 9; first++)
             {
                 for (int second = first - 1; second >= 2; second--)
@@ -30,7 +30,7 @@ namespace Lessons
             }
  */
 
-/* Second_task
+/* Task_1.2
  * Console.WriteLine("Enter the number >>>   ");
             int size = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < size; i++)
@@ -45,7 +45,7 @@ namespace Lessons
             }
 */
 
-/* Third_task
+/* Task_1.3
  * Console.WriteLine("Enter the cords >>> ");
             int[,] cords = new int[3, 2];
             for (int i = 0; i < 3; i++)
@@ -79,7 +79,7 @@ namespace Lessons
                 Console.WriteLine("\n");
             }
 */
-/* Fourth_task
+/* task_1.4
  * {
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(n);
@@ -99,6 +99,61 @@ namespace Lessons
             for (int i = 1; i <= n; i++)
             {
                 res *= i;
+            }
+            return res;
+        }
+
+
+task_2.1
+int num = Convert.ToInt32(Console.ReadLine());
+            string res = "";
+            while (num > 0)
+            {
+                res = Convert.ToString(num % 2) + res;
+                num /= 2;
+            }
+            int res_in_int = Convert.ToInt32(res);
+            while (res[0] == '0')
+            {
+                res_in_int <<= 1;
+                res = Convert.ToString(res_in_int);
+            }
+            Console.WriteLine(res_in_int);
+
+
+task 2.2
+static void Main(string[] args)
+        {
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            string bnum1 = ToBinari(num1);
+            string bnum2 = ToBinari(num2);
+            int b1 = Convert.ToInt32(bnum1, 2);
+            int b2 = Convert.ToInt32(bnum2, 2);
+            int b3 = b1 + b2;
+            string res = Convert.ToString(b3, 2);
+
+            Console.WriteLine(get_to_length(bnum1, res.Length));
+            Console.WriteLine(get_to_length(bnum2, res.Length));
+            Console.WriteLine($"\n************************************");
+            Console.WriteLine(res);
+        }
+        static string ToBinari(int num)
+        {
+            string res = "";
+            while (num > 0)
+            {
+                res = Convert.ToString(num % 2) + res;
+                num /= 2;
+            }
+            return res;
+        }
+        static string get_to_length(string bnum, int bnum_length)
+        {
+            string res = bnum;
+            while (res.Length != bnum_length)
+            {
+                res = '0' + res;
             }
             return res;
         }
