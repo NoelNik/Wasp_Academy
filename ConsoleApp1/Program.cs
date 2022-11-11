@@ -8,9 +8,34 @@ namespace Lessons
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello_world!");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            string bnum1 = to_binary(num1);
+            string bnum2 = to_binary(num2);
+            string bnum3 = to_binary(num1 + num2);
+            while (bnum2.Length != bnum1.Length)
+            {
+                if (bnum2.Length > bnum1.Length) { bnum1 = '0' + bnum1; }
+                else { bnum2 = '0' + bnum2; }
+            }
+            bnum1 = '0' + bnum1;
+            bnum2 = '0' + bnum2;
+            Console.WriteLine($" {bnum1}\n {bnum2}\n ***********************\n {bnum3}");
+
         }
-    }  
+        static string to_binary(int n)
+        {
+            string ans = "";
+            string ans_add = "";
+            while (n != 1)
+            {
+                ans = Convert.ToString(n & 1) + ans;
+                n >>= 1;
+            }
+            ans = Convert.ToString(n & 1) + ans;
+            return (ans);
+        }
+    }
 }
 
 
@@ -105,56 +130,53 @@ namespace Lessons
 
 
 task_2.1
-int num = Convert.ToInt32(Console.ReadLine());
-            string res = "";
-            while (num > 0)
+{
+            int num = Convert.ToInt32(Console.ReadLine());
+            string res = to_binary(num);
+            Console.WriteLine(res);
+        }
+        static string to_binary(int n)
+        {
+            string ans = "";
+            string ans_add = "";
+            while (n != 1)
             {
-                res = Convert.ToString(num % 2) + res;
-                num /= 2;
+                ans = Convert.ToString(n & 1) + ans;
+                n >>= 1;
             }
-            int res_in_int = Convert.ToInt32(res);
-            while (res[0] == '0')
-            {
-                res_in_int <<= 1;
-                res = Convert.ToString(res_in_int);
-            }
-            Console.WriteLine(res_in_int);
+            ans = Convert.ToString(n & 1) + ans;
+            return (ans);
+        }
+    }
 
 
 task 2.2
-static void Main(string[] args)
-        {
+{
             int num1 = Convert.ToInt32(Console.ReadLine());
             int num2 = Convert.ToInt32(Console.ReadLine());
-            string bnum1 = ToBinari(num1);
-            string bnum2 = ToBinari(num2);
-            int b1 = Convert.ToInt32(bnum1, 2);
-            int b2 = Convert.ToInt32(bnum2, 2);
-            int b3 = b1 + b2;
-            string res = Convert.ToString(b3, 2);
+            string bnum1 = to_binary(num1);
+            string bnum2 = to_binary(num2);
+            string bnum3 = to_binary(num1 + num2);
+            while (bnum2.Length != bnum1.Length)
+            {
+                if (bnum2.Length > bnum1.Length) { bnum1 = '0' + bnum1; }
+                else { bnum2 = '0' + bnum2; }
+            }
+            bnum1 = '0' + bnum1;
+            bnum2 = '0' + bnum2;
+            Console.WriteLine($" {bnum1}\n {bnum2}\n ***********************\n {bnum3}");
 
-            Console.WriteLine(get_to_length(bnum1, res.Length));
-            Console.WriteLine(get_to_length(bnum2, res.Length));
-            Console.WriteLine($"\n************************************");
-            Console.WriteLine(res);
         }
-        static string ToBinari(int num)
+        static string to_binary(int n)
         {
-            string res = "";
-            while (num > 0)
+            string ans = "";
+            string ans_add = "";
+            while (n != 1)
             {
-                res = Convert.ToString(num % 2) + res;
-                num /= 2;
+                ans = Convert.ToString(n & 1) + ans;
+                n >>= 1;
             }
-            return res;
-        }
-        static string get_to_length(string bnum, int bnum_length)
-        {
-            string res = bnum;
-            while (res.Length != bnum_length)
-            {
-                res = '0' + res;
-            }
-            return res;
+            ans = Convert.ToString(n & 1) + ans;
+            return (ans);
         }
 */
