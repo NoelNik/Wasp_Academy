@@ -180,3 +180,20 @@ task 2.2
             return (ans);
         }
 */
+/* task 3.1
+ * static void Main(string[] args)
+{
+    int[] input = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToArray();
+    int[] my_list = new int[input[0]];
+    for (int i = 0; i < input[0]; i++)
+    {
+        my_list[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    int sum = 0;
+    for (int i = 0; i < input[0]; i++)
+    {
+        sum += (int)Math.Pow(my_list[i], input[1]);
+    }
+    Console.WriteLine(Math.Pow(sum, (1.0 / input[1])));
+}
+ */
