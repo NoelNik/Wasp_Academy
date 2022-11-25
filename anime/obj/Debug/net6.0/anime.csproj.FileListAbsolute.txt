@@ -1,0 +1,15 @@
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\bin\Debug\net6.0\anime.exe
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\bin\Debug\net6.0\anime.deps.json
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\bin\Debug\net6.0\anime.runtimeconfig.json
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\bin\Debug\net6.0\anime.dll
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\bin\Debug\net6.0\anime.pdb
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\anime.csproj.AssemblyReference.cache
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\anime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\anime.AssemblyInfoInputs.cache
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\anime.AssemblyInfo.cs
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\anime.csproj.CoreCompileInputs.cache
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\anime.dll
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\refint\anime.dll
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\anime.pdb
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\anime.genruntimeconfig.cache
+C:\Users\Noel Nikolaenko\source\repos\anime\anime\obj\Debug\net6.0\ref\anime.dll
